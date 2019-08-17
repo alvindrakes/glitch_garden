@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1382070861191095872
+--- !u!1 &112356794668499586
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1382070861191095873}
+  - component: {fileID: 5610502775016006234}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -16,21 +16,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1382070861191095873
+--- !u!4 &5610502775016006234
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1382070861191095872}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.46, y: 0, z: 0}
+  m_GameObject: {fileID: 112356794668499586}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.47, y: -0.01, z: -3.7382812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1382070861412563559}
+  m_Father: {fileID: 1782757833937233393}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1382070861412563556
+--- !u!1 &1782757833937233394
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,10 +38,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1382070861412563559}
-  - component: {fileID: 1382070861412563558}
-  - component: {fileID: 1382070861412563557}
-  - component: {fileID: 1382070861412563576}
+  - component: {fileID: 1782757833937233393}
+  - component: {fileID: 1782757833937233392}
+  - component: {fileID: 1782757833937233395}
+  - component: {fileID: 1782757833937233390}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -49,29 +49,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1382070861412563559
+--- !u!4 &1782757833937233393
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1382070861412563556}
+  m_GameObject: {fileID: 1782757833937233394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.96, y: 3.239121, z: -13.636719}
+  m_LocalPosition: {x: 1.97, y: 3.239121, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1382070861191095873}
+  - {fileID: 5610502775016006234}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1382070861412563558
+--- !u!95 &1782757833937233392
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1382070861412563556}
+  m_GameObject: {fileID: 1782757833937233394}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: d12c2d271f85da8479fb5e38f8a8bb5e, type: 2}
@@ -83,13 +83,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!212 &1382070861412563557
+--- !u!212 &1782757833937233395
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1382070861412563556}
+  m_GameObject: {fileID: 1782757833937233394}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -133,13 +133,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1382070861412563576
+--- !u!114 &1782757833937233390
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1382070861412563556}
+  m_GameObject: {fileID: 1782757833937233394}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54d4231f163354546a3bf7a3d4bc4ed0, type: 3}
@@ -147,4 +147,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 5949096220087627404, guid: 086525868900cc44e8de89935b5ffe31,
     type: 3}
-  gun: {fileID: 1382070861191095872}
+  gun: {fileID: 112356794668499586}
