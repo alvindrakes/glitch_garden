@@ -14,11 +14,19 @@ public class DefenderSpawner : MonoBehaviour
     {
         Vector2 clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Vector2 worldPos = Camera.main.ScreenToWorldPoint(clickPos);
-        return worldPos;
+        Vector2 roundedPos = snapToGrid(worldPos);
+        return roundedPos;
     }
 
-    void SpawnDefender(Vector2 worldPos)
+    private Vector2 snapToGrid(Vector2 rawWorldPos)
     {
-        GameObject newDefender = Instantiate(defender, worldPos, Quaternion.identity) as GameObject; 
+        int newX = Mathf.RoundToInt(rawWorldPos.x);
+        int  newY = Mathf.RoundToInt(rawWorldPos.y);
+        return new Vector2(newX, newY);
+    }
+
+    void SpawnDefender(Vector2 roundedPos)
+    {
+        GameObject newDefender = Instantiate(defender, roundedPos, Quaternion.identity) as GameObject; 
     }
 }
