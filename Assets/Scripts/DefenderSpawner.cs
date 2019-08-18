@@ -9,7 +9,20 @@ public class DefenderSpawner : MonoBehaviour
     private void OnMouseDown()
     {
       if(defender == null) { return; }
-        SpawnDefender(getClickPosition());
+        AttempToPlaceDefender(getClickPosition());
+    }
+
+    private void AttempToPlaceDefender(Vector2 gridPos)
+    {
+        var starDisplay = FindObjectOfType<StarDisplay>();
+        int defenderCost = defender.getStarCost();
+
+        if (starDisplay.HaveEnoughStars(defenderCost))
+            {
+            SpawnDefender(gridPos);
+            starDisplay.SpendStars(defenderCost);
+        }
+
     }
 
     private Vector2 getClickPosition() 

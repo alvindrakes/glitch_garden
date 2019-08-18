@@ -24,7 +24,7 @@ public class Projectile : MonoBehaviour
         var health = otherCollider.GetComponent<Health>();
         var attacker = otherCollider.GetComponent<Attacker>();
 
-        Debug.Log("I hit " + otherCollider.name);
+    
         // reduce health of attacker
         if (attacker && health)
         {

@@ -11,22 +11,24 @@ public class Health : MonoBehaviour
     [SerializeField] float flashTime;
 
     private void Start() {
-        originalColour = GetComponent<SpriteRenderer>().color;
+        originalColour = GetComponentInChildren<SpriteRenderer>().color;
     }
 
     void FlashRed()
      {
-        GetComponent<SpriteRenderer>().color = Color.red;
+        GetComponentInChildren<SpriteRenderer>().color = Color.red;
          Invoke("ResetColor", flashTime);
     }
 
     void ResetColor()
     {
-       GetComponent<SpriteRenderer>().color = originalColour;
+        GetComponentInChildren<SpriteRenderer>().color = originalColour;
     }
 
     // Start is called before the first frame update
    public void dealDamage(float damage) {
+
+ 
         FlashRed();
        health -= damage; 
       

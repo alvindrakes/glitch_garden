@@ -5,16 +5,22 @@ using UnityEngine;
 public class Defender : MonoBehaviour
 {
     [SerializeField] int starCost = 50;
-
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] float timeForStar = 5;
+   
+    public void AddStar(int amount)
     {
-        
+        StartCoroutine(waitForStar());
+        FindObjectOfType<StarDisplay>().AddStars(amount);
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator waitForStar()
     {
-        
+        yield return new WaitForSeconds(timeForStar);
     }
+
+    public int getStarCost()
+    {
+        return starCost;
+    }
+
 }
