@@ -225,7 +225,6 @@ GameObject:
   m_Component:
   - component: {fileID: 511045693}
   - component: {fileID: 511045694}
-  - component: {fileID: 511045695}
   m_Layer: 0
   m_Name: Base collider
   m_TagString: Untagged
@@ -241,7 +240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511045692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.06, y: -4.74, z: 0}
+  m_LocalPosition: {x: -0.864, y: -4.74, z: 0}
   m_LocalScale: {x: 0.1629606, y: 11.8116, z: 0.98764}
   m_Children: []
   m_Father: {fileID: 1826424273}
@@ -273,18 +272,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &511045695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511045692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8df8a78196efb40bdce50ec110d995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &627760593
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +349,6 @@ GameObject:
   - component: {fileID: 1130392866}
   - component: {fileID: 1130392868}
   - component: {fileID: 1130392867}
-  - component: {fileID: 1130392869}
   m_Layer: 5
   m_Name: Health Text
   m_TagString: Untagged
@@ -422,9 +408,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '5
+  m_Text: '100
 
-'
+    wer'
 --- !u!222 &1130392868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -433,20 +419,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130392865}
   m_CullTransparentMesh: 0
---- !u!114 &1130392869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1130392865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84f73891c348ff548b8d6e6c1b9f5df8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 5
-  damage: 1
 --- !u!1 &1474244282
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1474244283}
   m_Layer: 0
-  m_Name: Health base
+  m_Name: Health display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -578,25 +550,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826424272}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2127521451 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1704445859798939341, guid: 0fedfc68b15754e48a143150afa5b23d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1704445859688862261}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2127521452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127521451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e47f264baabdaf649bc2bf54185283d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeToWait: 4
 --- !u!1001 &1704445859688862261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -920,6 +873,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551237576856238758, guid: b760c3eb1d5f96d40a3e311c829327d7,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551237576856238758, guid: b760c3eb1d5f96d40a3e311c829327d7,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.20225172
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551237576856238758, guid: b760c3eb1d5f96d40a3e311c829327d7,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.20225172
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b760c3eb1d5f96d40a3e311c829327d7, type: 3}
