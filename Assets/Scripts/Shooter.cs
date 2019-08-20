@@ -7,7 +7,7 @@ public class Shooter : MonoBehaviour
 
     [SerializeField] GameObject projectile;
     [SerializeField] GameObject gun;
-    [SerializeField] Animator animator;
+    Animator animator;
     AttackerSpawner myLaneSpawner;
 
 

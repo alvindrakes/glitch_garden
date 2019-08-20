@@ -20,7 +20,7 @@ public class HealthDisplay : MonoBehaviour
 
     private void UpdateText()
     {
-        healthText.text = health.ToString();
+        healthText.text = "Lives: " + health.ToString();
     }
 
     public void minusHealth()

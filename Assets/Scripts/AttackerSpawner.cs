@@ -24,6 +24,7 @@ public class AttackerSpawner : MonoBehaviour
     }
 
     private void SpawnAttacker() {
+        if (spawn == false) { return; }
         Attacker newAttacker = Spawn(UnityEngine.Random.Range(0, attackerPrefabs.Length));
         newAttacker.transform.parent = transform;
     }
@@ -33,7 +34,12 @@ public class AttackerSpawner : MonoBehaviour
     private Attacker Spawn(int index)
     {
         return Instantiate(attackerPrefabs[index], transform.position, transform.rotation) as Attacker;
+    }
 
+    public void StopSpawning()
+    {
+        spawn = false;
+        Debug.Log("Attacker spwners now stop!");
     }
 }
 
