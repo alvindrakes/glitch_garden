@@ -81,7 +81,6 @@ MonoBehaviour:
   projectile: {fileID: 5949096220087627404, guid: 086525868900cc44e8de89935b5ffe31,
     type: 3}
   gun: {fileID: 112356794668499586}
-  animator: {fileID: 0}
 --- !u!114 &1754318016591981507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,7 +127,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.004780531, y: 0.02012825}
+  m_Offset: {x: 0.0051063895, y: -0.00068700314}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -139,7 +138,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2772686, y: 1.3220544}
+  m_Size: {x: 1.1124872, y: 1.0445278}
   m_EdgeRadius: 0
 --- !u!114 &403481119704179138
 MonoBehaviour:
