@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DefenderButton : MonoBehaviour
 {
@@ -8,10 +10,24 @@ public class DefenderButton : MonoBehaviour
     Color originalColor;
     void Start()
     {
+        LabelButtonsWithCost();
         originalColor = GetComponent<SpriteRenderer>().color;
     }
 
-   void OnMouseDown()
+    private void LabelButtonsWithCost()
+    {
+        Text costText = GetComponentInChildren<Text>();
+        if(!costText)
+        {
+            Debug.Log(name + "has no cost text");
+        } else
+        {
+            costText.text = defenderPrefab.getStarCost().ToString();
+
+        }
+    }
+
+    void OnMouseDown()
     {
         ChangeDefenderColour();
     }
