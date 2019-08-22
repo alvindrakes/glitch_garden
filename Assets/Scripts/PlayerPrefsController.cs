@@ -8,7 +8,30 @@ public class PlayerPrefsController : MonoBehaviour
     const string MASTER_DIFFICULTY_KEY = "difficulty";
     const float MIN_VOLUME = 0f;
     const float MAX_VOLUME = 1f;
+    const float MIN_DIFFICULTY = 0f;
+    const float MAX_DIFFICULTY = 2f;
 
+
+
+    public static void SetDiffuiculty(float difficulty)
+    {
+        if (difficulty >= MIN_DIFFICULTY && difficulty <= MAX_DIFFICULTY)
+        {
+            PlayerPrefs.SetFloat(MASTER_DIFFICULTY_KEY, difficulty);
+            
+
+        } else
+        {
+            Debug.LogError("Difficulty is out of range");
+        }
+    }
+
+    public static float GetDifficulty()
+    {
+
+        return PlayerPrefs.GetFloat(MASTER_DIFFICULTY_KEY);
+       
+    }
 
     public static void SetMasterVolume(float volume)
     {
@@ -17,7 +40,8 @@ public class PlayerPrefsController : MonoBehaviour
             PlayerPrefs.SetFloat(MASTER_VOLUME_KEY, volume);
             Debug.Log("volume is set to " + volume);
 
-        } else
+        }
+        else
         {
             Debug.LogError("Master volume is out of range");
         }
@@ -27,6 +51,6 @@ public class PlayerPrefsController : MonoBehaviour
     {
 
         return PlayerPrefs.GetFloat(MASTER_VOLUME_KEY);
-       
+
     }
 }
