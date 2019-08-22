@@ -25,7 +25,7 @@ public class AttackerSpawner : MonoBehaviour
 
     private void SpawnAttacker() {
         if (spawn == false) { return; }
-        Attacker newAttacker = Spawn(UnityEngine.Random.Range(0, attackerPrefabs.Length));
+        Attacker newAttacker = Spawn(UnityEngine.Random.Range(0, attackerPrefabs.Length - 1));
         newAttacker.transform.parent = transform;
     }
 
