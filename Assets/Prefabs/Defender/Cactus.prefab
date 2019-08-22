@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 676b43cc09fe63444b29b0db2fe107ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starCost: 100
+  starCost: 50
   timeForStar: 5
 --- !u!95 &8153299334274844863
 Animator:
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bc706fd3c0578d46967598b0bb81fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 50
   deathVFX: {fileID: 0}
   flashTime: 0
 --- !u!1 &5679821376976808317
